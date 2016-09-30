@@ -48,6 +48,10 @@ public class EchoServerTest {
 					if("exit".equals(s)){
 						break;
 					}
+					if(s==null){
+						System.out.println("Closed by client");
+						
+					}
 					//¾²°í
 					scanner = new Scanner(System.in);
 					String answ = scanner.nextLine();
